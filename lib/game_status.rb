@@ -61,7 +61,7 @@ end
 
 def winner(board)
   if won?(board) != false
-    if won?(board).detect{|i| i == "X"}
+    if board[won?(board)[0]]
       "X"
     else
       "O"
